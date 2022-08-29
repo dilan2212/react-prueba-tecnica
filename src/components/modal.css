@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #111111bd;
+  display: flex;
+}
+
+.modal_container {
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+}
+
+.modal.modal_active{
+    opacity: 1;
+}
+
+.modal_exit{
+    position: absolute;
+    right: 17px;
+    top:10px;
+    z-index:1;
+}
